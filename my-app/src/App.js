@@ -1,6 +1,7 @@
 import PageEditTask from './pages/PageEditTask';
-import PageNewTask from './pages/PageNewTask';
+import PageNewProject from './pages/PageNewProject';
 import PageTasksTree from './pages/PageTasksTree';
+import PageProjectList from './pages/PageProjectList';
 import NaviBar from './layouts/NavBar/NaviBar';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
@@ -9,8 +10,8 @@ function App() {
     <div>
       <NaviBar></NaviBar>
       <Routes>
-        <Route exact path='/' element={<PageTasksTree/>}/>
-        <Route exact path='/add' element={<PageNewTask/>}/>
+        <Route exact path='/' element={<PageProjectList/>}/>
+        <Route exact path='/project/add' element={<PageNewProject/>}/>
         <Route exact path='/edit' element={<PageEditTask/>}/>
       </Routes>
     </div>

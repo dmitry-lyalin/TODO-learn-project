@@ -9,6 +9,7 @@ function Item(props) {
    <div className={classes.task}> 
       <h2> #{id} {name} </h2>  
       <p>{shotdesc}</p>
+      <p>{date_to_start}</p>
     </div>
  );
  
